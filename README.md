@@ -18,11 +18,11 @@ Simple snippet to redirect the user on page load based on detected Country
 		<script>
       			//Edit these two lines below
 			const redirect_to = "https://google.com";
-			const if_country_name_is = "Spain";
+			const if_country_is = "Spain";
 
 			document.onreadystatechange = function () {
 			    if (document.readyState == "interactive") {
-			        if((window.sGeobytesCountry ? window.sGeobytesCountry : '').toLowerCase() === if_country_name_is.toLowerCase()) {
+			        if((window.sGeobytesCountry ? window.sGeobytesCountry : '').toLowerCase() === if_country_is.toLowerCase()) {
 			        	//The country is as defined
 			        	//window.location.href = redirect_to;
 			        } else {
